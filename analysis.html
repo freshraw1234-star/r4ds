@@ -8,7 +8,7 @@
 
 <meta name="author" content="Ricardo Corvil">
 
-<title>Prediction Markets</title>
+<title>Wildfires</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -53,7 +53,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Prediction Markets</h1>
+<h1 class="title">Wildfires</h1>
 </div>
 
 
@@ -78,38 +78,25 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 5 × 3
-  time_bucket       mean_absolute_error snapshots
-  &lt;ord&gt;                           &lt;dbl&gt;     &lt;int&gt;
-1 More than 90 days              0.399       5239
-2 30 to 90 days                  0.311      16136
-3 7 to 30 days                   0.275      16719
-4 1 to 7 days                    0.174       4800
-5 Final day                      0.0896       800</code></pre>
-</div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="analysis_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
+<pre><code>[1] 883</code></pre>
 </div>
 </div>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 10 × 3
-   probability_bin actual_rate     n
-   &lt;fct&gt;                 &lt;dbl&gt; &lt;int&gt;
- 1 0-10%               0.00943   424
- 2 10-20%              0.0714     28
- 3 20-30%              0.227      22
- 4 30-40%              0.0556     18
- 5 40-50%              0.5        18
- 6 50-60%              0.682      22
- 7 60-70%              0.611      18
- 8 70-80%              0.818      11
- 9 80-90%              1          17
-10 90-100%             0.995     222</code></pre>
+<pre><code># A tibble: 87 × 8
+   incident    gis_acres fire_year agency state geometry_coordinates   lon   lat
+   &lt;chr&gt;           &lt;dbl&gt;     &lt;int&gt; &lt;chr&gt;  &lt;chr&gt; &lt;list&gt;               &lt;dbl&gt; &lt;dbl&gt;
+ 1 CAMPBELL      131504.      1990 USFS   CA    &lt;list [1]&gt;           -122.  40.0
+ 2 Foothills     229852.      1992 USFS   ID    &lt;list [1]&gt;           -116.  43.5
+ 3 Rabbit Cre…   149958.      1994 USFS   ID    &lt;list [1]&gt;           -115.  44.0
+ 4 Tyee          140173       1994 USFS   WA    &lt;list [1]&gt;           -120.  47.8
+ 5 Corral Cre…   118026.      1994 USFS   ID    &lt;list [1]&gt;           -116.  45.3
+ 6 Chicken Co…   107945.      1994 USFS   ID    &lt;list [1]&gt;           -115.  45.2
+ 7 Leamington…   157943.      1996 USFS   UT    &lt;list [1]&gt;           -112.  39.8
+ 8 HIGHWAY 58    106970.      1996 USFS   CA    &lt;list [1]&gt;           -120.  35.3
+ 9 Diamond Pt…   234315.      2000 USFS   ID    &lt;list [1]&gt;           -115.  45.1
+10 Clear Creek   164755       2000 USFS   ID    &lt;list [1]&gt;           -114.  45.2
+# ℹ 77 more rows</code></pre>
 </div>
 </div>
 
